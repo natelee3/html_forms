@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML forms</title>
+    <style>
+        label {
+            display: block;
+            margin: 16px 0;
+            width: 100%;
+            
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>User Registration</legend>
+            <label> Your name
+                <input type="text" name="username" placeholder="Please Enter Your Name"/>
+            </label>
+            <label> Your email address
+                <input type="tel" name="user-email" placeholder="Please Enter Your Email Address"/>
+            </label>
+            <label> Your password
+                <input type="password" name="password" placeholder="Enter a Password">
+            </label>
+            <button type="submit">Register</button>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>User Login</legend>
+            <label> Your Email Address
+                <input type="email" name="login-email" placeholder="Please enter your email">
+            </label>
+            <label> Your Password
+                <input type="password" name="login-password" placeholder="Please enter your password">
+            </label>
+            <button type="submit">Log In</button>
+        </fieldset>
+    </form>
+    
+</body>
+</html>

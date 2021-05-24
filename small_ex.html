@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms Small Exercises</title>
+    <style>
+        label {
+            display: block;
+            margin: 16px 0;
+            width: 100%;
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- Create a form that includes an input element and accepts text-->
+    <form>
+        <fieldset>
+            <legend>What's your favorite pizza topping?</legend>
+            <label>
+            <input type="text" name="topping" placeholder="Please enter a topping">
+            </label>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+<!--Create a form that allows the user to select from many options-->
+    <form>
+        <fieldset>
+            <legend>What's your favorite season?</legend>
+            <label>Winter
+                <input type="radio" id="winter" name="question" value="winter">
+            </label>
+            <label>Spring
+                <input type="radio" id="spring" name="question" value="spring">
+            </label>
+            <label>Summer
+                <input type="radio" id="summer" name="question" value="summer">
+            </label>
+            <label>Fall
+                <input type="radio" id="fall" name="question" value="fall">
+            </label>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+<!--Create a dropdown form-->
+    <form>
+        <fieldset>
+            <label for="voting-status">What is your voting status?</label>
+            <select name="status" id="voting-status">
+                <option value="" disabled selected>--Please choose an option</option>
+                <option value="Registered">Registered</option>
+                <option value="address-update">Need to update my address</option>
+                <option value="no-interest">Not interested in voting</option>
+            </select>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+</body>
+</html>
